@@ -1,0 +1,50 @@
+.maskContainer {
+  --input-font-size: 12px;
+  --default-ff: 'Montserrat', sans-serif;
+  --background-jumper: #232f4d;
+  --input-placeholder-color: #b9b9b9;
+
+  position: relative;
+  display: flex !important;
+  align-items: center;
+  cursor: text;
+  border: 1px solid black;
+  --mask-font: var(--input-font-size)/1 var(--default-ff);
+}
+
+.focus {
+  border-color: var(--background-jumper);
+}
+
+.maskInput {
+  z-index: 1;
+  width: var(--mask-input-width);
+  height: 100%;
+  padding: 0;
+  font: var(--mask-font);
+  background: inherit;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.maskInputWrapper {
+  position: relative;
+  height: 100%;
+}
+
+.fakeSpan {
+  position: absolute;
+  z-index: 0;
+  font: var(--mask-font);
+  opacity: 0;
+}
+
+.mask {
+  font: var(--mask-font);
+  color: var(--input-placeholder-color);
+}

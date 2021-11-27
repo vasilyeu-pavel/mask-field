@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MaskWrapper snapshot 1`] = `
+<label
+  className="maskContainer mask mask"
+  onClick={[Function]}
+>
+  <span
+    className="fakeSpan mask__fake"
+  />
+  <input />
+  <span
+    className="mask mask__tmp"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "YYYY",
+      }
+    }
+  />
+</label>
+`;
