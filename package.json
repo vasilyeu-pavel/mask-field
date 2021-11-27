@@ -8,8 +8,6 @@
     "test": "react-scripts test",
     "build": "webpack --mode production"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/plugin-transform-runtime": "^7.16.4",
@@ -43,11 +41,21 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilyeu-pavel/mask-field.git"
+  },
+  "homepage": "https://github.com/vasilyeu-pavel/mask-field#readme",
+  "bugs": {
+    "url": "https://github.com/vasilyeu-pavel/mask-field/issues"
+  },
+  "author": "Pavas",
+  "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "keywords": [],
-  "description": "Lib builder"
+  "description": "Mask field for react inputs"
 }
