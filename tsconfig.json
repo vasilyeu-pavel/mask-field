@@ -5,7 +5,7 @@
     "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": "./dist",
+    "outDir": "./lib",
     "lib": [
       "ES6",
       "DOM"
@@ -35,7 +35,7 @@
     "jsx": "react",
     "module": "ESNext",
     "declaration": true,
-    "declarationDir": "dist",
+    "declarationDir": "lib",
     "sourceMap": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

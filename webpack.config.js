@@ -10,7 +10,7 @@ const config = {
         index: './src/index.ts',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'lib'),
         filename: 'index.js',
         library: 'mask-field',
         libraryTarget: 'umd',
@@ -24,11 +24,10 @@ const config = {
     plugins: [
         new CleanWebpackPlugin({
             cleanStaleWebpackAssets: false,
-            cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, 'dist')],
+            cleanOnceBeforeBuildPatterns: [path.resolve(__dirname, 'lib')],
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-            chunkFilename: '[id].[contenthash].css',
+            filename: '[name].css',
         }),
     ],
     module: {

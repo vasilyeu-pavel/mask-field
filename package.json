@@ -1,6 +1,6 @@
 {
   "name": "mask-field",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "scripts": {
     "tsx": "tsc -p",
     "lintfix": "./node_modules/.bin/eslint --config ./.eslintrc.js --resolve-plugins-relative-to ./src --fix",
@@ -37,13 +37,13 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^16.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vasilyeu-pavel/mask-field.git"
+    "url": "git@github.com:vasilyeu-pavel/mask-field.git"
   },
   "homepage": "https://github.com/vasilyeu-pavel/mask-field#readme",
   "bugs": {
@@ -51,10 +51,10 @@
   },
   "author": "Pavas",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "keywords": [],
   "description": "Mask field for react inputs"

@@ -1,4 +1,4 @@
-# React Mask
+# React mask-field
 
 React input mask with simply interface and just customisation
 
@@ -18,13 +18,16 @@ React input mask with simply interface and just customisation
 ### Setup
 
 Install the package
-`npm i react-mask --save`
+`npm i mask-field --save`
 
 ### Use
 
 React Mask exports default MaskInput component
 
-`import MaskInput from "react-mask""`
+`import MaskField from "mask-field""`
+`import "mask-field/lib/index.css"`
+
+**importing styles are require for correct work**
 
 MaskInput has interface look like simple native input with two addition props (`mask`, `separators`)
 
@@ -34,7 +37,7 @@ MaskInput has interface look like simple native input with two addition props (`
 We just should need paste MaskInput in yours component and hand over needs props 
 
 ```
-<MaskInput
+<MaskField
   value={value}
   mask={mask}
   separators={separators}
@@ -67,7 +70,8 @@ We just should need paste MaskInput in yours component and hand over needs props
 
 If you want using custom react input component, mask exports additional wrapper.
 
-`import { MaskWrapper } from "react-mask""`
+`import { MaskWrapper } from "mask-field""`
+`import "mask-field/lib/index.css"`
 
 You should wrap your custom input and hand over props
 
@@ -115,7 +119,7 @@ example:
 If you want using simply function to transform value to custom mask or cut all separators
 You can import `prepareValueFromMask, prepareValueToMask`  
 
-`import { prepareValueFromMask, prepareValueToMask } from "react-mask""`
+`import { prepareValueFromMask, prepareValueToMask } from "mask-field""`
 
 example:
 
