@@ -1,6 +1,6 @@
 {
   "name": "mask-field",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "tsx": "tsc -p",
     "lintfix": "./node_modules/.bin/eslint --config ./.eslintrc.js --resolve-plugins-relative-to ./src --fix",
