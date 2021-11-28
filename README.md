@@ -22,7 +22,7 @@ Install the package
 
 ### Use
 
-React Mask exports default MaskInput component
+React Mask exports default MaskField component
 
 ```
 import MaskField from "mask-field"
@@ -31,12 +31,12 @@ import "mask-field/lib/index.css"
 
 **importing styles are require for correct work**
 
-MaskInput has interface look like simple native input with two addition props (`mask`, `separators`)
+MaskField has interface look like simple native input with two addition props (`mask`, `separators`)
 
 `mask` is showing how transform value
 `separators` are array of symbols who must be a skipped
 
-We just should need paste MaskInput in yours component and hand over needs props 
+We just should need paste MaskField in yours component and hand over needs props 
 
 ```
 <MaskField
