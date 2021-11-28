@@ -1,6 +1,6 @@
 {
   "name": "mask-field",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "tsx": "tsc -p",
     "lintfix": "./node_modules/.bin/eslint --config ./.eslintrc.js --resolve-plugins-relative-to ./src --fix",
@@ -56,6 +56,11 @@
   "files": [
     "lib"
   ],
-  "keywords": [],
+  "keywords": [
+    "react",
+    "mask",
+    "field",
+    "input"
+  ],
   "description": "Mask field for react inputs"
 }
