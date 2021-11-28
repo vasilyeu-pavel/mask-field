@@ -24,8 +24,10 @@ Install the package
 
 React Mask exports default MaskInput component
 
-`import MaskField from "mask-field""`
-`import "mask-field/lib/index.css"`
+```
+import MaskField from "mask-field"
+import "mask-field/lib/index.css"
+```
 
 **importing styles are require for correct work**
 
@@ -70,8 +72,10 @@ We just should need paste MaskInput in yours component and hand over needs props
 
 If you want using custom react input component, mask exports additional wrapper.
 
-`import { MaskWrapper } from "mask-field""`
-`import "mask-field/lib/index.css"`
+```
+import { MaskWrapper } from "mask-field"
+import "mask-field/lib/index.css"
+```
 
 You should wrap your custom input and hand over props
 
