@@ -75,7 +75,6 @@ const config = {
                             sourceMap: true,
                         },
                     },
-                    "import-glob-loader",
                 ],
             },
         ],
@@ -89,14 +88,4 @@ const config = {
     }
 };
 
-module.exports = (env, argv) => {
-    if (argv.mode === 'development') {
-        // * add some development rules here
-    } else if (argv.mode === 'production') {
-        // * add some prod rules here
-    } else {
-        throw new Error('Specify env');
-    }
-
-    return config;
-};
+module.exports = () => config;
