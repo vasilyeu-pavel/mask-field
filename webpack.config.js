@@ -60,7 +60,7 @@ const config = {
                     {
                         loader: "css-loader",
                         options: {
-                            sourceMap: true,
+                            sourceMap: false,
                             importLoaders: 1,
                             modules: {
                                 auto: resourcePath => resourcePath.endsWith(CSS_MODULES_EXT),
@@ -72,7 +72,7 @@ const config = {
                         loader: "sass-loader",
                         options: {
                             implementation: require("sass"),
-                            sourceMap: true,
+                            sourceMap: false,
                         },
                     },
                 ],

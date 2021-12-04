@@ -3,18 +3,7 @@ import { IMaskInputProps } from "../../types"
 import { joinClasses } from "../../utils"
 import MaskWrapper from "../MaskWrapper"
 
-const styles = {
-  inputWrapper: {
-    height: "100%",
-  },
-  errorContainer: {
-    display: "flex",
-    FlexDirection: "column",
-    marginTop: "5px",
-    fontSize: "10px",
-    color: "#e82f3f",
-  },
-}
+import styles from "./MaskInput.module.scss"
 
 export const MaskInput = ({
   type = "tel",
@@ -35,7 +24,7 @@ export const MaskInput = ({
   const [maskErrors, setErrors] = useState(errors)
 
   return (
-    <div style={styles.inputWrapper}>
+    <div className={styles.inputWrapper}>
       <MaskWrapper
         value={value}
         separators={separators}
@@ -71,7 +60,7 @@ export const MaskInput = ({
         )}
       </MaskWrapper>
       {withErrors && maskErrors &&
-        <div style={styles.errorContainer} className={joinClasses(modifiersErrors)}>
+        <div className={joinClasses(styles.errorContainer, modifiersErrors)}>
           {maskErrors.map((error, i) => (
             <span key={i}>
               {error}
