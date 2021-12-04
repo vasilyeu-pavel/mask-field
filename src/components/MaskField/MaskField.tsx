@@ -3,9 +3,9 @@ import { IMaskInputProps } from "../../types"
 import { joinClasses } from "../../utils"
 import MaskWrapper from "../MaskWrapper"
 
-import styles from "./MaskInput.module.scss"
+import styles from "./MaskField.module.scss"
 
-export const MaskInput = ({
+export const MaskField = ({
   type = "tel",
   value,
   separators,
@@ -72,4 +72,4 @@ export const MaskInput = ({
   )
 }
 
-export default memo(MaskInput)
+export default memo(MaskField)

@@ -1,4 +1,4 @@
-import { ChangeEvent, MutableRefObject, ReactNode, InputHTMLAttributes } from "react"
+import { ChangeEvent, InputHTMLAttributes, MutableRefObject, ReactNode } from "react"
 
 export const typeCasting = <T>(data: unknown) => data as T
 

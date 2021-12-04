@@ -1,7 +1,6 @@
 module.exports = {
     extends: [
         "umbrellio",
-        "umbrellio/flow",
         "umbrellio/react",
         "umbrellio/jest"
     ],
@@ -22,12 +21,6 @@ module.exports = {
         // for test settings
         jest: true,
 
-        // Flow
-        Class: true,
-        SyntheticEvent: true,
-        TimeoutID: true,
-        IntervalID: true,
-
         // custom
         popup: true,
         topLine: true,
@@ -38,7 +31,6 @@ module.exports = {
         "switch-colon-spacing": 0,
         "new-cap": 0,
         "react/prefer-stateless-function": [2, { "ignorePureComponents": true }],
-        "flowtype/newline-after-flow-annotation": [2, "always"],
         "import/newline-after-import": ["error", { "count": 1 }],
         "no-empty-function": 2,
         "react/jsx-closing-tag-location": 2,
