@@ -5,3 +5,4 @@ node_modules
 .babelrc
 .env
 .eslintrc.js
+img

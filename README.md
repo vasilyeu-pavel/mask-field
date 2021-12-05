@@ -13,6 +13,8 @@ React input mask with simply interface and just customisation
 - no external dependencies
 
 [demo](https://mask-52cec.firebaseapp.com/)
+
+![example](img/example.gif)
  
 
 ### Setup
