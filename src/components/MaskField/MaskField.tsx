@@ -6,7 +6,6 @@ import MaskWrapper from "../MaskWrapper"
 import styles from "./MaskField.module.scss"
 
 export const MaskField = ({
-  type = "tel",
   value,
   separators,
   mask,
@@ -48,7 +47,7 @@ export const MaskField = ({
           <div className={maskInputWrapperStyle}>
             <input
               {...props}
-              type={type}
+              type="tel"
               className={maskInputStyle}
               value={maskedValue}
               onChange={handleMaskChange}
