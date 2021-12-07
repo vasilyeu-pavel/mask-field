@@ -1,7 +1,7 @@
 import React from "react"
 import { shallow } from "enzyme"
 import { IMaskInputProps } from "../../../types"
-import { MaskInput } from "../MaskInput"
+import { MaskField } from "../MaskField"
 
 Object.defineProperty(document, "fonts", {
   value: {
@@ -10,7 +10,7 @@ Object.defineProperty(document, "fonts", {
   writable: true,
 })
 
-describe("MaskInput", () => {
+describe("MaskField", () => {
   const defaultProps: IMaskInputProps = {
     value: "value",
     separators: ["/"],
@@ -26,7 +26,7 @@ describe("MaskInput", () => {
   })
 
   it("snapshot", () => {
-    expect(shallow(<MaskInput {...defaultProps} />))
+    expect(shallow(<MaskField {...defaultProps} />))
       .toMatchSnapshot()
   })
 
@@ -36,7 +36,7 @@ describe("MaskInput", () => {
     jest.spyOn(React, "useState")
       .mockImplementationOnce(() => [["error"], setErrors])
 
-    const component = shallow(<MaskInput {...defaultProps} withErrors />)
+    const component = shallow(<MaskField {...defaultProps} withErrors />)
 
     expect(component.find(".errorContainer").length).toBe(1)
   })

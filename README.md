@@ -1,18 +1,21 @@
 # React mask-field
 
-React input mask with simply interface and just customisation
+React mask-field has simply interface and supports in all famous browsers
 
 **Features** 
 
-- **colorizes mask**
-- works with different mask
-- takes different validators 
+- **can change mask color from css rules**
+- can works with different masks
+- can takes different validators 
 - can works with copy/paste events
 - supports dynamic changed masks
 - supports all major browsers
-- no external dependencies
+- doesn't has no external dependencies 
+  **(has been checked since safari - ios12)**
 
 [demo](https://mask-52cec.firebaseapp.com/)
+
+![example](img/example.gif)
  
 
 ### Setup
@@ -22,21 +25,21 @@ Install the package
 
 ### Use
 
-React Mask exports default MaskField component
+Exports by default MaskField component
 
 ```
 import MaskField from "mask-field"
 import "mask-field/lib/index.css"
 ```
 
-**importing styles are require for correct work**
+**importing styles are required for correct work**
 
-MaskField has interface look like simple native input with two addition props (`mask`, `separators`)
+MaskField has interface look like simple native input with two additional props (`mask`, `separators`)
 
-`mask` is showing how transform value
+`mask` is showing how transformed value
 `separators` are array of symbols who must be a skipped
 
-We just should need paste MaskField in yours component and hand over needs props 
+We just should need to paste MaskField in yours component and hand over needed props 
 
 ```
 <MaskField
@@ -57,20 +60,19 @@ We just should need paste MaskField in yours component and hand over needs props
 | `separators` | true | string[] | to skipping symbols | [" ", "(", ")"] |
 | `value` | true | string | input value | - |
 | `onChange` | true | func | on change cb | - |
-| `validators` | false | func[] | list of validators who will call by chain. (default [isNumber]) (value: string): string | undefined | [isNumber] |
-| `placeholder` | false | string | showing with empty input | - |
-| `modifiers` | false | string | setting custom styles | - |
-| `modifiersErrors` | false | string | setting custom styles for errors container | - |
-| `type` | false | string | input type (default `tel`), **don't have to use number** | string |
+| `validators` | false | func[] | validators list which will are calling by chain (default [isNumber]) (value: string): string | undefined | [isNumber] |
+| `placeholder` | false | string | are showing with empty input | - |
+| `modifiers` | false | string | are setting custom styles | - |
+| `modifiersErrors` | false | string | are setting custom styles for errors container | - |
 | `withErrors` | false | bool | trigger for visible errors block (default false) | true |
-| `errors` | false | string[] | array of errors | ["Value is not a number"] |
-| `disabled` | false | bool | flag for disabling input | true |
-| `readOnly` | false | bool | flag for set readOnly in input | true |
+| `errors` | false | string[] | errors array | ["Value is not a number"] |
+| `disabled` | false | bool | flag for disable input | true |
+| `readOnly` | false | bool | flag for set readOnly | true |
 
 
 ### Advance
 
-If you want using custom react input component, mask exports additional wrapper.
+If you want to use custom react input component - mask exports additional wrapper.
 
 ```
 import { MaskWrapper } from "mask-field"
@@ -116,7 +118,7 @@ example:
 </MaskWrapper>
 ```
 
-**In children MaskWrapper returns props who needed hand over to custom input**
+**Mask Wrapper returns function with arguments which are needed to hand out in custom input**
 
 ### Mask utils
 

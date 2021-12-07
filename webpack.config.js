@@ -34,7 +34,7 @@ const config = {
         rules: [
             {
                 test: /\.ts(x?)$/,
-                exclude: [/node_modules/, /__tests__/],
+                exclude: [/node_modules/, /__tests__/, /__strories__/],
                 use: [
                     {
                         loader: 'babel-loader',
@@ -60,7 +60,7 @@ const config = {
                     {
                         loader: "css-loader",
                         options: {
-                            sourceMap: true,
+                            sourceMap: false,
                             importLoaders: 1,
                             modules: {
                                 auto: resourcePath => resourcePath.endsWith(CSS_MODULES_EXT),
@@ -72,10 +72,9 @@ const config = {
                         loader: "sass-loader",
                         options: {
                             implementation: require("sass"),
-                            sourceMap: true,
+                            sourceMap: false,
                         },
                     },
-                    "import-glob-loader",
                 ],
             },
         ],
@@ -89,14 +88,4 @@ const config = {
     }
 };
 
-module.exports = (env, argv) => {
-    if (argv.mode === 'development') {
-        // * add some development rules here
-    } else if (argv.mode === 'production') {
-        // * add some prod rules here
-    } else {
-        throw new Error('Specify env');
-    }
-
-    return config;
-};
+module.exports = () => config;

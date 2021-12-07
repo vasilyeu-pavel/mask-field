@@ -1,4 +1,4 @@
-import MaskInput from "./components/MaskInput"
+import MaskField from "./components/MaskField"
 import MaskWrapper from "./components/MaskWrapper"
 import {
   prepareValueFromMask,
@@ -11,4 +11,4 @@ export {
   prepareValueToMask,
 }
 
-export default MaskInput
+export default MaskField
