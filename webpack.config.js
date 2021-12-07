@@ -34,7 +34,7 @@ const config = {
         rules: [
             {
                 test: /\.ts(x?)$/,
-                exclude: [/node_modules/, /__tests__/],
+                exclude: [/node_modules/, /__tests__/, /__strories__/],
                 use: [
                     {
                         loader: 'babel-loader',
